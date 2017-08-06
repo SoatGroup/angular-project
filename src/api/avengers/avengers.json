@@ -1,0 +1,37 @@
+[
+  {
+    "avengerId": 1,
+    "avengerName": "Iron Man",
+    "description": "Inventeur de génie (ce qui fait qu'il s'entend bien avec Bruce Banner), Tony Stark est un milliardaire égocentrique, devenu super-héros davantage par goût de la provocation que par altruisme. Son humour second degré et son sens de la répartie le rendent aussi irrésistible qu'agaçant. Malgré sa désinvolture, il prend toujours ses responsabilités.",
+    "starRating": 3.2,
+    "imageUrl": "https://s-media-cache-ak0.pinimg.com/originals/8c/16/cb/8c16cb9da19085e9ff307c5934ead19d.jpg"
+  },
+  {
+    "avengerId": 2,
+    "avengerName": "Captain america",
+    "description": "De tous les héros Marvel, Captain America est le plus altruiste. Il s'est porté volontaire pour devenir un surhomme et entend bien s'en servir pour protéger la veuve et l'orphelin. Par ses qualités de meneur d'hommes et de stratège, il mérite amplement son titre de capitaine. Il a beaucoup plus le sens de l'honneur que le sens de l'humour, ce qui engendre quelques frictions avec le facétieux Tony Stark.",
+    "starRating": 4.2,
+    "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
+  },
+  {
+    "avengerId": 5,
+    "avengerName": "Thor",
+    "description": "Spontanément arrogant et orgueilleux, Thor a appris peu à peu la valeur de l'humilité et de la solidarité (même si sa nature première reprend parfois le dessus). Il entretient une relation d'amour-haine avec son frère, Loki, et se sent coupable du fait que ce dernier soit devenu mauvais.",
+    "starRating": 4.8,
+    "imageUrl": "http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png"
+  },
+  {
+    "avengerId": 8,
+    "avengerName": "Hulk",
+    "description": "Bruce Banner est un scientifique de génie, sensible, doux et plein d'humour. Depuis l'accident qui a provoqué sa métamorphose en Hulk, il vit dans la réclusion, de peur de perdre le contrôle de lui-même et de blesser quelqu'un involontairement. Très réservé et calme en apparence, il bouillonne intérieurement et refuse de se considérer comme autre chose qu'un monstre.",
+    "starRating": 3.7,
+    "imageUrl": "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png"
+  },
+  {
+    "avengerId": 10,
+    "avengerName": "Black Widow",
+    "description": "Natasha Romanoff sait jouer de tous ses atouts et n'hésite pas à séduire ses adversaires pour mieux les abattre ensuite. Affectant un détachement à toute épreuve, elle ne perd jamais le sens des priorités et sent le devoir d'être à la hauteur pour racheter le passé sanglant qui la hante.",
+    "starRating": 4.6,
+    "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
+  }
+]

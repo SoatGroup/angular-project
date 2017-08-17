@@ -34,15 +34,15 @@ export class ProductListComponent implements OnInit {
       "imageUrl": "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png"
     }];
 
-  listeFilter: string;
   filteredProducts: IProduct[];
+  private _listeFilter: string;
 
-  get listFilter(): string {
-    return this.listFilter;
+  get listeFilter(): string {
+    return this._listeFilter;
   }
-  set listFilter(value: string) {
-    this.listFilter = value;
-    this.filteredProducts = this.listFilter ? this.performFilter(this.listFilter) : this.products;
+  set listeFilter(value: string) {
+    this._listeFilter = value;
+    this.filteredProducts = this.listeFilter ? this.performFilter(this.listeFilter) : this.products;
   }
 
   performFilter(filterBy: string): IProduct[] {
@@ -55,9 +55,12 @@ export class ProductListComponent implements OnInit {
     this.showImage = !this.showImage;
   }
 
-  constructor() { }
-
   ngOnInit() {
+
+  }
+
+  constructor() {
+    this.filteredProducts = this.products;
   }
 
 }

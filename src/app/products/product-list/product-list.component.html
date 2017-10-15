@@ -23,7 +23,7 @@
             <th>
               <button class="btn btn-primary" (click)="toogleImage()">
                 {{showImage ? "Hide" : "Show"}} Image
-                        </button>
+              </button>
             </th>
             <th>Product</th>
             <th>Code</th>
@@ -37,7 +37,11 @@
               <img *ngIf="showImage" [src]="product.imageUrl" [title]="product.productName" [style.width.px]='imageWidth' [style.margin.px]='imageMargin'
               />
             </td>
-            <td>{{ product.productName }}</td>
+            <td>
+              <a [routerLink]="['/products', product.productId]">
+                {{ product.productName }}
+              </a>
+            </td>
             <td>{{ product.productCode }}</td>
             <td>{{ product.releaseDate }}</td>
             <td>{{ product.price | currency : 'EUR' : true}}</td>

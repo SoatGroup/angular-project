@@ -85,7 +85,7 @@
                                 id="xs-components-links"
                             >
                                 <li class="link">
-                                    <a href="../components/AppComponent.html"  data-type="entity-link" class="active" >AppComponent</a>
+                                    <a href="../components/AppComponent.html" >AppComponent</a>
                                 </li>
                                 <li class="link">
                                     <a href="../components/ProductDetailComponent.html" >ProductDetailComponent</a>
@@ -94,7 +94,7 @@
                                     <a href="../components/ProductListComponent.html" >ProductListComponent</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../components/WelcomeComponent.html" >WelcomeComponent</a>
+                                    <a href="../components/WelcomeComponent.html"  data-type="entity-link" class="active" >WelcomeComponent</a>
                                 </li>
                         </ul>
                     </li>
@@ -243,7 +243,7 @@
                                        id="components-links"
                    >
                                        <li class="link">
-                                           <a href="../components/AppComponent.html"  data-type="entity-link" class="active" >AppComponent</a>
+                                           <a href="../components/AppComponent.html" >AppComponent</a>
                                        </li>
                                        <li class="link">
                                            <a href="../components/ProductDetailComponent.html" >ProductDetailComponent</a>
@@ -252,7 +252,7 @@
                                            <a href="../components/ProductListComponent.html" >ProductListComponent</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../components/WelcomeComponent.html" >WelcomeComponent</a>
+                                           <a href="../components/WelcomeComponent.html"  data-type="entity-link" class="active" >WelcomeComponent</a>
                                        </li>
                                </ul>
                            </li>
@@ -338,7 +338,7 @@
 
 <ol class="breadcrumb">
   <li>Components</li>
-  <li>AppComponent</li>
+  <li>WelcomeComponent</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -363,7 +363,7 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/app/app.component.ts</code>
+    <code>src/app/home/welcome.component.ts</code>
 </p>
 
 
@@ -386,21 +386,13 @@
 
 
 
-            <tr>
-                <td class="col-md-3">selector</td>
-                <td class="col-md-9"><code>app-root</code></td>
-            </tr>
 
-            <tr>
-                <td class="col-md-3">styleUrls</td>
-                <td class="col-md-9"><code>app.component.css</code></td>
-            </tr>
 
 
 
             <tr>
                 <td class="col-md-3">templateUrl</td>
-                <td class="col-md-9"><code>./app.component.html</code></td>
+                <td class="col-md-9"><code>./welcome.component.html</code></td>
             </tr>
 
 
@@ -421,7 +413,7 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                 <a href="#pageTitle">pageTitle</a>
+                                <span class="modifier">Public</span> <a href="#pageTitle">pageTitle</a>
                             </li>
                         </ul>
                     </td>
@@ -446,12 +438,12 @@
                     <tr>
                         <td class="col-md-4">
                             <a name="pageTitle"></a>
-                            <span class="name"><b> pageTitle</b><a href="#pageTitle"><span class="fa fa-link"></span></a></span>
+                            <span class="name"><b><span class="modifier">Public</span> pageTitle</b><a href="#pageTitle"><span class="fa fa-link"></span></a></span>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                            <code>pageTitle:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                            <span class="modifier-icon fa fa-reset"></span><code>pageTitle:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
     </code>
                         </td>
                     </tr>
@@ -463,12 +455,12 @@
                         </tr>
                         <tr>
                             <td class="col-md-4">
-                                <i>Default value : </i><code>DevTool Management</code>
+                                <i>Default value : </i><code>Welcome</code>
                             </td>
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/app.component.ts:9</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="7" class="link-to-prism">src/app/home/welcome.component.ts:7</a></div>
                                 </td>
                             </tr>
     
@@ -483,29 +475,32 @@
         <pre class="line-numbers"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
 
 @Component({
-  selector: &#x27;app-root&#x27;,
-  templateUrl: &#x27;./app.component.html&#x27;,
-  styleUrls: [&#x27;./app.component.css&#x27;]
+  templateUrl: &#x27;./welcome.component.html&#x27;
 })
-export class AppComponent {
-  pageTitle: string &#x3D; &#x27;DevTool Management&#x27;;
+export class WelcomeComponent {
+  public pageTitle: string &#x3D; &#x27;Welcome&#x27;;
 }
 </code></pre>
     </div>
 
     <div class="tab-pane fade" id="templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;div&gt;
-  &lt;nav class&#x3D;&#x27;navbar navbar-default&#x27;&gt;
-      &lt;div class&#x3D;&#x27;container-fluid&#x27;&gt;
-          &lt;a class&#x3D;&#x27;navbar-brand&#x27;&gt;{{pageTitle}}&lt;/a&gt;
-          &lt;ul class&#x3D;&#x27;nav navbar-nav&#x27;&gt;
-              &lt;li&gt;&lt;a [routerLink]&#x3D;&quot;[&#x27;welcome&#x27;]&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-              &lt;li&gt;&lt;a [routerLink]&#x3D;&quot;[&#x27;products&#x27;]&quot;&gt;Product List&lt;/a&gt;&lt;/li&gt;
-          &lt;/ul&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;panel panel-primary&quot;&gt;
+  &lt;div class&#x3D;&quot;panel-heading&quot;&gt;
+    {{pageTitle}}
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;panel-body&quot;&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+      &lt;img src&#x3D;&quot;./assets/images/logo.gif&quot; class&#x3D;&quot;img-responsive center-block&quot; style&#x3D;&quot;max-height:300px;padding-bottom:50px&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+      &lt;div class&#x3D;&quot;text-center&quot;&gt;Developed by:&lt;/div&gt;
+      &lt;h3 class&#x3D;&quot;text-center&quot;&gt;Me&lt;/h3&gt;
+
+      &lt;div class&#x3D;&quot;text-center&quot;&gt;@SoatGroup&lt;/div&gt;
+      &lt;div class&#x3D;&quot;text-center&quot;&gt;
+        &lt;a href&#x3D;&quot;http://blog.soat.fr/&quot;&gt;http://blog.soat.fr/&lt;/a&gt;
       &lt;/div&gt;
-  &lt;/nav&gt;
-  &lt;div class&#x3D;&#x27;container&#x27;&gt;
-      &lt;router-outlet&gt;&lt;/router-outlet&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
@@ -534,10 +529,10 @@ export class AppComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div>  <nav class=\'navbar navbar-default\'>      <div class=\'container-fluid\'>          <a class=\'navbar-brand\'>{{pageTitle}}</a>          <ul class=\'nav navbar-nav\'>              <li><a [routerLink]="[\'welcome\']">Home</a></li>              <li><a [routerLink]="[\'products\']">Product List</a></li>          </ul>      </div>  </nav>  <div class=\'container\'>      <router-outlet></router-outlet>  </div></div></div>'
+        var COMPONENT_TEMPLATE = '<div><div class="panel panel-primary">  <div class="panel-heading">    {{pageTitle}}  </div>  <div class="panel-body">    <div class="row">      <img src="./assets/images/logo.gif" class="img-responsive center-block" style="max-height:300px;padding-bottom:50px" />    </div>    <div class="row">      <div class="text-center">Developed by:</div>      <h3 class="text-center">Me</h3>      <div class="text-center">@SoatGroup</div>      <div class="text-center">        <a href="http://blog.soat.fr/">http://blog.soat.fr/</a>      </div>    </div>  </div></div></div>'
     var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ProductDetailComponent', 'selector': ''},{'name': 'ProductListComponent', 'selector': 'app-product-list'},{'name': 'WelcomeComponent', 'selector': ''}];
     var DIRECTIVES = [];
-    var ACTUAL_COMPONENT = {'name': 'AppComponent'};
+    var ACTUAL_COMPONENT = {'name': 'WelcomeComponent'};
 </script>
 <script src="../js/tree.js"></script>
 

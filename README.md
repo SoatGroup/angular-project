@@ -1,5 +1,7 @@
 # AngularProject
 
+This project covers the basics of angular. It uses the data from [Deborah Kurata repository](https://github.com/DeborahK/Angular-GettingStarted). For a deep understanding of Angular, I invite you to follow her courses on [pluralsight](https://www.pluralsight.com/authors/deborah-kurata)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.1.
 
 ## Development server
